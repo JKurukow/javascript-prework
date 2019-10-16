@@ -3,7 +3,7 @@ function buttonClicked(argButtonName) {
     console.log(argButtonName + ' został kliknięty');
 }
 var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber;
-
+//Losowanie numeru
 function getMoveName(argMoveId) {
     console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
     if (argMoveId == 1) {
@@ -17,7 +17,7 @@ function getMoveName(argMoveId) {
         return 'kamień';
     }
 }
-
+// wywołanie wyniku
 function displayResult(argPlayerMove, argComputerMove) {
     console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
     if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
