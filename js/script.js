@@ -3,7 +3,7 @@ function buttonClicked(argButtonName) {
     console.log(argButtonName + ' został kliknięty');
 }
 var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber;
-//Losowanie numeru
+//wybieranie 
 function getMoveName(argMoveId) {
     console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
     if (argMoveId == 1) {
