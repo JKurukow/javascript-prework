@@ -1,10 +1,10 @@
-function buttonClicked(argButtonName) {
+function buttonClicked() {
     clearMessages();
     console.log(argButtonName + ' został kliknięty');
 }
 const argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber;
 //Losowanie numeru
-function getMoveName(argMoveId) {
+function getMoveName() {
     console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
     if (argMoveId == 1) {
         return 'kamień';
@@ -43,7 +43,7 @@ buttonScissors.addEventListener('click', function () {
     buttonClicked('nożyce');
 });
 // wywołanie wyniku
-function displayResult(argPlayerMove, argComputerMove) {
+function displayResult() {
     console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
     if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
         printMessage('Wygrywasz!');
